@@ -54,12 +54,12 @@ void find_SUM10(int array[][30], int r, int c)
 
         for (int i = 0; i < a; i++)
         {
-            for (int j = i; j < b; j++)
+            for (int j = i + 1; j < b; j++)
             {
                 if (ans[i] + anx[j] == 10)
                 {
-                    vitri[dem][dem] = i; // luu vi tri
-                    vitri[dem][dem + 1] = j;
+                    vitri[dem][0] = i; // luu vi tri
+                    vitri[dem][1 + 1] = j;
                     dem++;
                 }
             }
@@ -80,7 +80,7 @@ void find_SUM10(int array[][30], int r, int c)
     {
         for (int i = 0; i < b; i++)
         {
-            for (int j = i; j < a; j++)
+            for (int j = i + 1; j < a; j++)
             {
                 if (ans[i] + anx[j] == 10)
                 {
@@ -96,12 +96,14 @@ void find_SUM10(int array[][30], int r, int c)
             exit(0);
         }
         cout << "Cac cap co tong = 10;" << endl;
-        for (int i = 0; i <= dem; i++)
+        for (int i = 0; i < dem; i++)
         {
             cout << "[" << vitri[i][0] << "]"
                  << "[" << vitri[i][1] << "]";
             cout << "::";
         }
+
+        cout << "ne" << vitri[dem - 1][0];
     }
 }
 int main()

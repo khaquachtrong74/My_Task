@@ -12,7 +12,7 @@ void Initial_Array(int array[][30], int r, int c) // ham dung de khoi tao cac gi
     {
         for (int j = 0; j < c; j++)
         {
-            array[i][j] = rand() % 100; // gioi han tu 0 toi 9
+            array[i][j] = rand() % 10; // gioi han tu 0 toi 9
         }
     }
 }

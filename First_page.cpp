@@ -25,21 +25,19 @@ int main()
     // else
     //     cout << -1;
 
-    // int n;
-    // cout << "Enter your n: ";
-    // cin >> n;
+    int n;
+    cout << "Enter your n: ";
+    cin >> n;
     // isDuong(n);
     // EXC201(n);
     // n = double(n);
     // EXC202(n);
     // n = int(n);
-    // EXC205(n);
+    EXC205(n);
 
     // int n;
     // cin >> n;
     // EXC207(n);
-
-    EXC209(344323);
 
     return 0;
 }

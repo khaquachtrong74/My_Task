@@ -140,9 +140,7 @@ int sodaonguoc(int n, int m) // m o lan dau se = 0;
     {
         return m;
     }
-    m = m * 10 + n % 10;
-    n /= 10;
-    return sodaonguoc(n, m);
+    return sodaonguoc(n /= 10, m = m * 10 + n % 10);
 }
 
 // Tong cac chu so chan va le
