@@ -2,6 +2,7 @@
 #include <ctime>
 #include <cstdlib>
 #include <algorithm>
+#include "Bb_02.cpp"
 using namespace std;
 
 int ucln(int a, int b)
@@ -46,10 +47,10 @@ int giaiThua(int n)
     }
     return n * giaiThua(n - 1);
 }
-bool isDuong(int n)
-{ // kiem tra gia tri duong am
-    return n < 0 ? false : true;
-}
+// bool isDuong(int n)
+// { // kiem tra gia tri duong am
+//     return n < 0 ? false : true;
+// }
 int toHop(int n, int k)
 {
     return (giaiThua(n) / (giaiThua(n - k) * giaiThua(k)));
@@ -160,15 +161,18 @@ int main()
     // p += 4;
     // cout << "Dia chi con tro sau khi tang/giam gia tri " << *p << endl;
 
-    int *a = new int[6];
-    nhap(a, 6);
-    xuat(a, 6);
-    delete[] a;
-    a = nullptr;
-    if (a == nullptr)
-    {
-        cout << true;
-    }
-    cout << false;
+    // int *a = new int[6];
+    // nhap(a, 6);
+    // xuat(a, 6);
+    // delete[] a;
+    // a = nullptr;
+    // if (a == nullptr)
+    // {
+    //     cout << true;
+    // }
+    // cout << false;
+    int n;
+    cin >> n;
+    pascal_draw(n, 0);
     return 0;
 }

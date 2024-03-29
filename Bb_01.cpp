@@ -5,7 +5,7 @@
 #include <cstdio>
 #include <string>
 using namespace std;
-void Initial_Array(int array[][30], int r, int c) // ham dung de khoi tao cac gia tri ngau nhien cho 1 ma tran
+void Initial_Array(int array[][15], int r, int c) // ham dung de khoi tao cac gia tri ngau nhien cho 1 ma tran
 {
     srand(static_cast<int>(time(0))); // ham de chon cac gia tri ngau nhien duong theo thoi gian
     for (int i = 0; i < r; i++)

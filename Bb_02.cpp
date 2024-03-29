@@ -180,3 +180,31 @@ int Ten_Binary(int k, int array[])
     k--;
     return m + Ten_Binary(k, array);
 }
+
+// draw pascal
+
+int tohop(int n, int k)
+{
+    return giaithua(n) / ((giaithua(k) * giaithua(n - k)));
+}
+
+void pascal_row(int n, int index)
+{
+    if (index > n)
+    {
+        return;
+    }
+    cout << tohop(n, index) << " ";
+    pascal_row(n, index + 1);
+}
+
+void pascal_col(int n, int index)
+{
+    if (index == n)
+    {
+        return;
+    }
+    pascal_row(index, 0);
+    cout << endl;
+    pascal_col(n, index + 1);
+}
