@@ -1,2 +1,8 @@
+int x, y;
+    // cout << "Enter any char to end programs." << endl;
+    // while (cin >> x)
+    // {
+    //     nhap(x, y);
 
-    cout << "Bai 3: " << double(anss) << endl;
+    //     cout << sum_2(x, y) << endl;
+    // }
